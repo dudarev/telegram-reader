@@ -8,7 +8,7 @@ Scope: the entire repository.
 - Config is XDG-compliant: `~/.config/telegram-reader/config.yaml` preferred; JSON accepted.
 - Session path: `~/.local/share/telegram-reader/session.session`.
 - Default message limit is 10; do not mark dialogs/messages as read.
-- Outputs are Markdown by default for simplicity. Consider adding a `--format jsonl` option in a future version if needed for agents.
+- Outputs are Markdown by default for simplicity.
 - Avoid adding unrelated dependencies.
 - Tests: add lightweight unit tests only, no networked tests by default.
 - Style: small, focused modules under `src/telegram_reader/`.

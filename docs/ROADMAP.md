@@ -3,7 +3,6 @@
 Lightweight plan for future improvements. Keep scope minimal and read-only.
 
 ## Output & UX
-- Add `--format jsonl` to support agent-friendly JSON Lines output (Markdown remains default).
 - Message attribution: include sender information (e.g., `from_me` flag, sender display name/username) in outputs. Keep privacy in mind and avoid leaking PII beyond what Telegram provides.
 - Option to include message IDs in Markdown headers or prefixed metadata lines.
 
@@ -16,7 +15,7 @@ Lightweight plan for future improvements. Keep scope minimal and read-only.
 - Type checking with mypy (strict where reasonable) and CI gate.
 
 ## Features (Read-only)
-- Export dialogs/messages to files (markdown/jsonl) without marking read.
+- Export dialogs/messages to files (markdown) without marking read.
 - Optional date/time filters for messages.
 - Message text-only vs full metadata toggle (still read-only, no media downloading by default).
 

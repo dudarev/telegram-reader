@@ -1,0 +1,36 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.venv/
+.env
+.env.*
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+uv.lock
+
+# Telethon sessions (sometimes created locally during testing)
+*.session
+*.session-journal
+*.session-*
+
+# Local config files (real creds should never be committed)
+config.yaml
+config.json
+
+# Build
+dist/
+build/
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

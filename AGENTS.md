@@ -25,6 +25,9 @@ Versioning & changelog policy:
 - When bumping the version, update it in both `pyproject.toml` and `src/telegram_reader/__init__.py` to keep them in sync.
 - Every version change must be accompanied by an entry in `CHANGELOG.md` (Keep a Changelog format).
 
+Process hygiene:
+- For each implemented roadmap feature, bump the version, update the changelog, and suggest the user make an incremental commit when the feature is ready.
+
 Secrets & git hygiene:
 - Never commit real `config.yaml` / `config.json` with `api_id`/`api_hash`.
 - Never commit Telethon session files (e.g., `*.session`, `*.session-journal`). Sessions live under `~/.local/share/telegram-reader/`.

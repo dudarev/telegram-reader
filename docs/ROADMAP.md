@@ -2,10 +2,6 @@
 
 Lightweight plan for future improvements. Keep scope minimal and read-only.
 
-## Output & UX
-- Message attribution: include sender information (e.g., `from_me` flag, sender display name/username) in outputs. Keep privacy in mind and avoid leaking PII beyond what Telegram provides.
-- Option to include message IDs in Markdown headers or prefixed metadata lines.
-
 ## CLI & Config
 - Global defaults via config for output format and limits.
 - Non-interactive auth support via environment variables (opt-in), without persisting secrets.

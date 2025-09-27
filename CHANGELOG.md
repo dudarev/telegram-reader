@@ -8,6 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [0.1.4] - 2025-09-27
+
+### Added
+- Message attribution in Markdown outputs: include sender info with prioritization of `@username`, fallback to display name, and add id suffixes for groups/channels or users without usernames. Outgoing messages are labeled as `me`. Channel posts include signed `post_author` when present.
+
+### Docs
+- AGENTS.md: note to bump version, update changelog, and suggest incremental commit when implementing roadmap features.
+
+
 ## [0.1.3] - 2025-09-27
 
 ### Changed

@@ -30,11 +30,16 @@ def cmd_messages(args: argparse.Namespace) -> int:
             count = 0
             last_id = None
             blocks: List[str] = []
+            raw_messages = []
             async for m in client.iter_messages(
-                entity, limit=args.limit, offset_id=args.offset_id, reverse=args.reverse
+                entity, limit=args.limit, offset_id=args.offset_id, reverse=False
             ):
-                count += 1
+                raw_messages.append(m)
                 last_id = m.id
+
+            # Reverse to output in chronological order (oldest first)
+            for m in reversed(raw_messages):
+                count += 1
                 block = message_to_markdown_block(m)
                 if block:
                     blocks.append(block)
@@ -52,5 +57,4 @@ def add_subparser(subparsers: argparse._SubParsersAction) -> None:
     sp.add_argument("--peer", required=True, help="@username, t.me/..., or numeric id")
     sp.add_argument("--limit", type=int, default=10)
     sp.add_argument("--offset-id", type=int, default=0)
-    sp.add_argument("--reverse", action="store_true", help="Read forward (newer first)")
     sp.set_defaults(func=cmd_messages)

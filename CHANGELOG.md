@@ -8,6 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [0.1.5] - 2025-09-28
+
+### Changed
+- Messages are now always output in chronological order (oldest first). Removed the `--reverse` flag from the `messages` command as it was confusing and unnecessary.
+
+### Docs
+- Updated agent guide to reflect the removal of `--reverse` and clarify that messages are always chronological.
+
+
 ## [0.1.4] - 2025-09-27
 
 ### Added

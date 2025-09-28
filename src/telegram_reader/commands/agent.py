@@ -41,7 +41,7 @@ Messages
 
 Pagination & Order
 - Use --offset-id <n> as a starting point.
-- Add --reverse to read forward (newer first).
+- Messages are always output in chronological order (oldest first).
 
 Defaults & Behavior
 - Default message limit: 10.
